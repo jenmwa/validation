@@ -1,5 +1,5 @@
 
-
+//function validate data
 function validate(){
     const firstname = document.querySelector('#firstname').value;
     const familyName = document.querySelector('#familyName').value;
