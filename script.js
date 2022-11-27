@@ -27,14 +27,13 @@ function validate(){
     
 
     alert(
-        `firstname: ${firstnameResult} = namn minst 2bokstäver a-ö stora som små.
-        familyName: ${familyNameResult} = efternamn 2 bokstäver bokstäver a-ö stora som små.
-        adress: ${adressResult} = namn bokstäver a-ö stora som små.
-        postalCode: ${postalResult} = postnummer är 5 siffror med eller utan mellanslag.
-        
-        phone: ${phoneResult} = telefonnummer är 10 siffror, du kan använda mellanslag.
-        email: ${emailResult} = mailadress är godkänt.
-        id: ${idResult} = personnummer är giltigt.` 
+        `firstname: ${firstnameResult}  
+        familyName: ${familyNameResult} 
+        adress: ${adressResult} 
+        postalCode: ${postalResult} 
+        phone: ${phoneResult} 
+        email: ${emailResult} 
+        id: ${idResult} ` 
 
         );
     
