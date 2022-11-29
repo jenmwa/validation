@@ -5,50 +5,60 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RegEx validate</title>
+    <link href="main.css" rel="stylesheet" type="text/CSS">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
 </head>
+
 <body>
-<section class="formOrder" id="formOrder">
-    <form action="" onsubmit="validate()">
-        <label>
+    <div id="formContainer" class="formContainer">
+<!-- <section class="formOrder" id="formOrder">
+     <form > 
+        <label class="side">
         Namn:* 
           <input type="text" id="firstname" name="firstname" placeholder="Förnamn" /><br>
+          <div id="nameError"></div>
         </label>
-        <label>
+        <label class="side">
         Efternamn:* 
           <input type="text" id="familyName" name="familyName" placeholder="Efternamn"/> <br>
+          <div id="lastnameError"></div>
         </label>
-        <label>
+        <label class="side">
         Adress (gata):* 
           <input type="text" id="adress" name="adress" placeholder="Adress (gata)"/> <br>
+          <div id="adressError"></div>
         </label>
-        <label>
+        <label class="side">
         ev Portkod: 
           <input type="text" id="portkod" name="portkod" placeholder="portkod "/> <br>
         </label>
-        <label>
+        <label class="side">
         Postnummer:* 
           <input type="text" id="zip" name="zip" placeholder="postnummer" /><br>
+          <div id="zipError"></div>
         </label>
-        <label>
+        <label class="side">
         Postort:* 
           <input type="text" id="city" name="city" placeholder="postort" /><br>
+          <div id="cityError"></div>
         </label>
         <label>
-        <label>
+        <label class="side">
           Telefonnummer (mobil):     
           +46 <input type="tel" id="phoneNumber" name="phoneNumber" placeholder="07xxxxxxxx"/> <br>
+          <div id="phoneError"></div>
         </label>  
-        <label>
+        <label class="side">
         Epost:* 
           <input type="text" id="email" name="email" placeholder="E-postadress"/> <br>
+          <div id="emailError"></div>
         </label>
           
         <fieldset>
           <legend>Betalalternativ:</legend>
   
           <label>
-            <input type="radio" name="paymentOptions" id="debitKredit" />
+            <input type="radio" name="paymentOptions" id="debitCredit" />
             <span>Debit/Kreditkort</span>
           </label>
   
@@ -58,34 +68,32 @@
           </label>
   
           <div class="cardPayment">
-              <label>
+            <label class="side">
                 <span>Kortnummer:</span><br />
                 <input type="number" name="cardNumber" id="cardNumber" /><br />
               </label>
   
-              <label>
+              <label class="side">
                 <span>Datum/år:</span><br />
                 <input type="month" name="cardDate" id="cardDate" /><br />
               </label>
   
-              <label>
+              <label class="side">
                 <span>CVC:</span><br />
                 <input type="number" name="cardSecurity" id="cardSecurity" />
               </label>
             </div>
   
-            <div class="fakturaPayment">
-              <label>
-                <div class="errorMessage"></div>
+            <div class="invoicePayment">
+                <label class="side">
                 <span>Personnummer:*</span><br>
                 <input
                   type="text"
                   name="socialSecurity"
                   id="socialSecurity"
-                  minlength="10"
-                  maxlength="10"
                   placeholder="ÅÅMMDDXXXX"
                 />
+                <div id="socialSecurityError"></div>
               </label>
             </div>
           </fieldset>
@@ -103,7 +111,8 @@
       <br><br>
           <button id="submit" type="submit" disabled>Submit</button> <br>
           <button id="reset">Reset</button><br>
-</section>
+</section> -->
+</div>
 
     <script src="script.js"></script>
 </body>

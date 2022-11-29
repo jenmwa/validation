@@ -1,0 +1,14 @@
+.side {
+    display: flex;  
+    margin: 12px;  
+}
+
+section {
+    width: 600px;
+}
+
+.material-symbols-outlined {
+    color: darkolivegreen;
+    margin: 0;
+    padding: 0;
+}
