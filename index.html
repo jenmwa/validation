@@ -5,23 +5,104 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RegEx validate</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
 </head>
 <body>
 <section class="formOrder" id="formOrder">
     <form action="" onsubmit="validate()">
-        <input type="text" id="firstname" name="firstname" placeholder="Förnamn" /> <br>
-        <input type="text" id="familyName" name="familyName" placeholder="Efternamn"/> <br>
-        <input type="text" id="adress" name="adress" placeholder="Adress (gata)"/> <br>
-        <input type="text" id="postalCode" name="postalCode" placeholder="postnummer" /><br>
-        <input type="text" id="postalCode" name="postalCode" placeholder="postort" /><br>
         <label>
-            +46 <input type="tel" id="phoneNumber" name="phoneNumber" placeholder="07xxxxxxxx"/> <br>
+        Namn:* 
+          <input type="text" id="firstname" name="firstname" placeholder="Förnamn" /><br>
         </label>
-        <input type="text" id="email" name="email" placeholder="E-postadress"/> <br>
-        <input type="text" id="id" name="id" placeholder="personnummer"/> <br>
-        
-        <input type="submit" />
-      </form>
+        <label>
+        Efternamn:* 
+          <input type="text" id="familyName" name="familyName" placeholder="Efternamn"/> <br>
+        </label>
+        <label>
+        Adress (gata):* 
+          <input type="text" id="adress" name="adress" placeholder="Adress (gata)"/> <br>
+        </label>
+        <label>
+        ev Portkod: 
+          <input type="text" id="portkod" name="portkod" placeholder="portkod "/> <br>
+        </label>
+        <label>
+        Postnummer:* 
+          <input type="text" id="zip" name="zip" placeholder="postnummer" /><br>
+        </label>
+        <label>
+        Postort:* 
+          <input type="text" id="city" name="city" placeholder="postort" /><br>
+        </label>
+        <label>
+        <label>
+          Telefonnummer (mobil):     
+          +46 <input type="tel" id="phoneNumber" name="phoneNumber" placeholder="07xxxxxxxx"/> <br>
+        </label>  
+        <label>
+        Epost:* 
+          <input type="text" id="email" name="email" placeholder="E-postadress"/> <br>
+        </label>
+          
+        <fieldset>
+          <legend>Betalalternativ:</legend>
+  
+          <label>
+            <input type="radio" name="paymentOptions" id="debitKredit" />
+            <span>Debit/Kreditkort</span>
+          </label>
+  
+          <label>
+            <input type="radio" name="paymentOptions" id="invoice" />
+            <span>Faktura</span>
+          </label>
+  
+          <div class="cardPayment">
+              <label>
+                <span>Kortnummer:</span><br />
+                <input type="number" name="cardNumber" id="cardNumber" /><br />
+              </label>
+  
+              <label>
+                <span>Datum/år:</span><br />
+                <input type="month" name="cardDate" id="cardDate" /><br />
+              </label>
+  
+              <label>
+                <span>CVC:</span><br />
+                <input type="number" name="cardSecurity" id="cardSecurity" />
+              </label>
+            </div>
+  
+            <div class="fakturaPayment">
+              <label>
+                <div class="errorMessage"></div>
+                <span>Personnummer:*</span><br>
+                <input
+                  type="text"
+                  name="socialSecurity"
+                  id="socialSecurity"
+                  minlength="10"
+                  maxlength="10"
+                  placeholder="ÅÅMMDDXXXX"
+                />
+              </label>
+            </div>
+          </fieldset>
+  
+          <label>
+            <input type="checkbox" id="gdpr" name="gdpr" required />
+            <span>Godkännande för behandling av personuppgifter.*</span><br />
+          </label>
+  
+          <label>
+            <input type="checkbox" id="newsletter" name="newsletter" checked />
+            <span>Få vårat nyhetsbrev en gång i veckan för alla nyheter och erbjudanden.</span><br />
+          </label>
+        </form>
+      <br><br>
+          <button id="submit" type="submit" disabled>Submit</button> <br>
+          <button id="reset">Reset</button><br>
 </section>
 
     <script src="script.js"></script>
