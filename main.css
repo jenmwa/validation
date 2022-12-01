@@ -17,3 +17,16 @@ input {
     margin: 0 5px;
     height: 20px;
 }
+/* 
+.cardPayment,
+.invoicePayment {
+  visibility: hidden;
+  width: 1px;
+  height: 1px;
+}
+
+.paymentOpen {
+  visibility: visible;
+  height: auto;
+  width: auto;
+} */
